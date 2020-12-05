@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: rgb(209, 9, 9);
+    color: white;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    margin-right: 16px;
+}
+
+.blog-btn {
+    background-color: rgb(197, 194, 194);
+    color : black;
+    margin: 20px 0;
+}
+
+.intro-para {
+    color: rgb(107, 106, 106);
+    margin: 15px 0;
+}
+
+.sqaures {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(179, 176, 176);
+    margin: 0 5px;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.margin-0 {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/* HEADER */
+
+.header {
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.header a {
+    color: white;
+}
+
+.nav-bar li {
+    margin-right: 16px;
+}
+
+.socials a{
+    margin-right: 16px;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(to right, rgba(70, 52, 235, 0.5),rgba(52, 235, 61,0.5) ), url("../home-bg.jpg") no-repeat ;
+    background-size: cover;
+    padding: 140px 0;
+    color: white;
+}
+
+.hero-heading {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+/* ABOUT */
+
+.about {
+    padding-top: 40px;
+}
+
+.intro-heading {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item {
+    width: 30%;
+}
+
+.skill-tag {
+    margin: 20px 0;
+}
+
+.line {
+    width: 85%;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.line-photography {
+    width: 90%;
+}
+
+.line-cm {
+    width: 75%;
+}
+
+.line-cms {
+    width: 70%;
+}
+
+/* BLOG */
+
+.blog {
+    background-color: rgb(202, 199, 199);
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.blog-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    background-color: white;
+    width: 46%;
+    margin: 20px;
+    
+}
+
+.blog-img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.date {
+    color: rgb(241, 11, 11);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    margin-left: 30px;
+}
+
+.blog-content h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* WORK */
+
+.work {
+    padding: 40px 0;
+}
+
+.work-items img {
+    padding-top: 20px;
+    width: 20%;
+}
+
+/* CONTACT */
+
+.contact {
+    background: linear-gradient(to right, rgba(70, 52, 235, 0.5),rgba(52, 235, 61,0.5) );
+    padding: 40px 0;
+    color: rgb(51, 50, 50);
+}
+
+.form {
+    width: 80%;
+}
+
+input {
+    width: 48%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+textarea {
+    width: 97%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.map iframe {
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(to right, rgb(80, 80, 82),rgb(0, 0, 0) );
+    color: rgb(179, 178, 178);
+    padding: 40px 0;
+}
+
+.company-info {
+    width: 40%;
+}
+
+.footer-item {
+    margin-bottom: 16px;
+}
+
+.footer-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-item a {
+    color: rgb(179, 178, 178);
+}
+
+.contact-icons i {
+    color: rgb(179, 178, 178);
+    margin-left: 20px;
+}
